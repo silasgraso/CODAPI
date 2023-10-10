@@ -40,7 +40,7 @@ namespace CODAPI.Controllers
         [Route("{id}")]
         public ActionResult<Weapon> GetById([FromHeader] int id)
         {
-            Weapon weapon = _WeaponRepository.GetById(id);
+            Weapon? weapon = _WeaponRepository.GetById(id);
             if (weapon == null)
             {
                 return NotFound();
