@@ -71,7 +71,7 @@ namespace CODAPI.Controllers
         {
         }
 
-        // DELETE api/<CODController>/5
+        //DELETE api/<CODController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
